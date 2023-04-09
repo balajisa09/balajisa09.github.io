@@ -99,7 +99,7 @@
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 63806 10508</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Dindigul, TN, India</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bangalore, India</span></li>
               </ul>
             </div>
             <div class="col-lg-6">
@@ -258,6 +258,12 @@
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
+            <span class="iconify-inline skill-icon" data-icon="logos:helm" ></span>
+            <h3>Helm</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
             <span class="iconify-inline skill-icon" data-icon="logos:docker-icon"></span>
             <h3>Docker</h3>
           </div>
@@ -314,6 +320,18 @@
           <div class="icon-box">
             <span class="iconify-inline skill-icon" data-icon="jam:gitlab-circle" style="color: orange;"></span>
             <h3>Gitlab CI</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <span class="iconify-inline skill-icon" data-icon="skill-icons:ansible"></span>
+            <h3>Ansible</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <span class="iconify-inline skill-icon" data-icon="skill-icons:redis-light"></span>
+            <h3>Redis</h3>
           </div>
         </div>
 
@@ -504,17 +522,19 @@
         <div class="col-lg-6">
           <h3 class="resume-title">Professional Experience</h3>
           <div class="resume-item">
-            <h4>SDE - 1</h4>
+            <h4>Site Reliability Engineer</h4>
             <h5>Jun 2022 - Present</h5>
             <p><em>Ola Cabs & Electric, Bengaluru</em></p>
             <p>
             <ul>
-              <li>Working  as a SDE for the Infrastructure team</li>
-              <li>Developing an internal developer portal to migrate mesos workloads to kubernetes seamlessly</li>
-              <li>Implemented installation of CNI plugin for network security within the kubernetes cluster and performance tested it by generating 2 million rpm.</li>
-              <li>Setup Rancher, a multi cluster orchestrator tool to manage multiple clusters from a single controlplane, making deployments and configuration to multiple clusters easy.</li>
-              <li>Instrumented applications for enhancing monitoring and observability by writing prometheus exporters</li>
-              <li>Being on-call for troubleshooting production issues</li>
+              <li>Working as an Infrastrucuture Engineer in a team that builds and operates Infra for Ola Cabs, Ola Money and Ola Electric.</li>
+              <li>Developing an internal developer portal in Golang that takes care of onboarding, scaling, monitoring, logging microservices in kubernetes.</li>
+              <li>Implemented installation of CNI plugin for network security within the kubernetes cluster and performance tested it by generating 2 million rpm for PCI DSS audit by RBI.</li>
+              <li> Designed and executed a migration plan for the Aerospike database cluster in production from Azure to AWS,
+                   leveraging XDR replication. Infrastructure backup, restore, and node configuration were automated through
+                   Terraform scripts and Ansible playbooks, resulting in minimal downtime.</li>
+              <li>Instrumented applications for enhancing monitoring and observability by writing prometheus exporters.</li>
+              <li>Being on-call for troubleshooting production issues.</li>
             </ul>
             </p>
           </div>
@@ -525,8 +545,11 @@
             <p>
             <ul>
               <li>Worked  as an associate SRE with the Development team</li>
-              <li>Implemented automated software patches for more than 100 nodes in AWS via serverless functions.</li>
-              <li>Created infrastructure for applications with disaster recovery in place via infrastructure as code</li>
+              <li>Developed a state machine with aws lambda functions to automate software patches for more than 100 nodes in
+                AWS that takes backup of machines as AMIs, delete old AMIs, initiate OS patches and notify stakeholders via email
+                using SES service, incase of issues. This project reduced the manual hours and cost drastically.</li>
+              <li>Proposed and Implemented security testing via ui automation using zed attack proxy tool to report application
+                vulnerabilities and educated developers about OWASP top 10 vulnerabilities, to handle cyberattack incidents.</li>
               <li>Acted as a security representative for major applications</li>
               <li>Incident management for business critical systems. Written blameless post-mortem reports on incidents</li>
             </ul>
